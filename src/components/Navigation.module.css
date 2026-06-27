@@ -1,0 +1,34 @@
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.link {
+  border: 1px solid #334155;
+  background-color: #1e293b;
+  color: #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+}
+
+.link:hover {
+  color: #9827c5;
+  border-color: #9827c5;
+  box-shadow: 0 4px 12px rgba(152, 39, 197, 0.2);
+}
+
+/* Mobile: stack links vertically */
+@media (max-width: 640px) {
+  .nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .link {
+    text-align: center;
+  }
+}
